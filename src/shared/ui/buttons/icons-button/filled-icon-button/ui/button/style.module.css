@@ -1,0 +1,28 @@
+@import "@app/globals.css";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+  border: none;
+}
+
+.primary {
+  background-color: var(--gr-600);
+  transition: background-color ease-in-out 200ms;
+
+  &:hover {
+    background-color: #16152b;
+  }
+
+  &:active {
+    background-color: var(--purple-700);
+    transition: none;
+  }
+
+  &:disabled {
+    background-color: var(--gr-400);
+  }
+}

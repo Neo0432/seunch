@@ -1,0 +1,22 @@
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.25rem;
+
+  padding: 0.375rem 1.6875rem;
+
+  height: 1.75rem;
+  border-radius: 0.75rem;
+
+  background-color: var(--gr-600);
+
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: var(--gr-100);
+}
+
+.selected {
+  background-color: var(--gr-700);
+}

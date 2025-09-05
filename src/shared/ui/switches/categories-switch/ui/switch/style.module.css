@@ -1,0 +1,16 @@
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+
+  padding: 0.25rem;
+  border-radius: 1rem;
+
+  background-color: var(--gr-600);
+  height: fit-content;
+}
+
+.categories {
+  flex: 1;
+}

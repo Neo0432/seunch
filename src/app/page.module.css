@@ -13,7 +13,7 @@
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-outfit);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +50,7 @@
 
 .main code {
   font-family: inherit;
-  background: var(--gray-alpha-100);
+  background: #090909;
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
@@ -67,10 +67,7 @@
   height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -78,6 +75,14 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
+}
+
+.category {
+  background-color: #090909;
+}
+
+.switch {
+  width: 404px;
 }
 
 a.primary {

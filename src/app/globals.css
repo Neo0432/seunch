@@ -1,38 +1,27 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gr-800: #090909;
+  --gr-700: #121212;
+  --gr-600: #181818;
+  --gr-400: #817f7f;
+  --gr-100: #edf1f4;
+
+  --purple-700: #282741;
+  --purple-300: #8c88e5;
+
+  --orange-600: #a15a29;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #090909;
     --foreground: #ededed;
   }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {

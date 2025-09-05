@@ -19,6 +19,30 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      "react/jsx-no-target-blank": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": ["error", { ignore: ["navigation"] }],
+      "no-use-before-define": "off",
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
+      "@typescript-eslint/no-use-before-define": [
+        "error",
+        { variables: false },
+      ],
+      "@typescript-eslint/no-unused-vars": "off",
+      "prettier/prettier": ["error", { endOfLine: "auto" }],
+      "simple-import-sort/imports": "off",
+      "no-used-vars": "off",
+
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+    },
   },
 ];
 
