@@ -1,6 +1,6 @@
 import { FocusEvent, KeyboardEvent, HTMLInputTypeAttribute } from "react";
 
-export interface UIInputBaseProps {
+export interface IInputBaseProps {
   id?: string;
   value?: any | null;
   placeholder?: string;

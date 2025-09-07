@@ -1,4 +1,4 @@
-import { UIInputBaseProps } from "@shared/ui/inputs/types";
+import { IInputBaseProps } from "@shared/ui/inputs/types";
 
 export function InputBase({
   id,
@@ -13,7 +13,7 @@ export function InputBase({
   pattern,
   disabled,
   readOnly,
-}: UIInputBaseProps) {
+}: IInputBaseProps) {
   return (
     <input
       id={id}

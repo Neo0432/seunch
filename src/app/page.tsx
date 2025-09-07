@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import FilledRoundedButton from "@shared/ui/buttons/icons-button/filled-rounded-button/ui/button";
 import { CategoryBlock } from "@shared/ui/categories";
 import { SwitchCategories } from "@shared/ui/switches";
+import { FilledInput } from "@shared/ui/inputs";
 
 export default function Home() {
   return (
@@ -39,6 +40,8 @@ export default function Home() {
               { title: "Unread", id: "2" },
             ]}
           />
+
+          <FilledInput placeholder="Search" value="" />
         </div>
       </main>
       <footer className={styles.footer}>
