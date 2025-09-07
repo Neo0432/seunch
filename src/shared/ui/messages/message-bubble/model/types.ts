@@ -1,10 +1,8 @@
-type ISender = "me" | "interlocutor";
-type IMessageType = "start" | "middle" | "end";
+import { IMessageType } from "@shared/types/message";
 
 export interface IMessageProps {
   content: string;
   date: Date;
-  sender: ISender;
   type?: IMessageType;
 
   className?: string;

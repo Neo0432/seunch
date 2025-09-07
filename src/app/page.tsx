@@ -1,11 +1,16 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import FilledRoundedButton from "@shared/ui/buttons/icons-button/filled-rounded-button/ui/button";
 import { CategoryBlock } from "@shared/ui/categories";
 import { SwitchCategories } from "@shared/ui/switches";
 import { FilledInput } from "@shared/ui/inputs";
+import { useState } from "react";
+import { MessageWithTail } from "@shared/ui/messages";
 
 export default function Home() {
+  const [value, setValue] = useState<string | null>(null);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -41,7 +46,21 @@ export default function Home() {
             ]}
           />
 
-          <FilledInput placeholder="Search" value="" />
+          <FilledInput
+            placeholder="Search"
+            value={value}
+            onChange={(e) => {
+              setValue(e.target.value);
+            }}
+          />
+
+          <MessageWithTail
+            content="whats up?"
+            sender="me"
+            messageStatus="checked"
+            type="lonely"
+            date={new Date()}
+          />
         </div>
       </main>
       <footer className={styles.footer}>

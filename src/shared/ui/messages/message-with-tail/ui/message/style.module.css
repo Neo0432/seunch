@@ -1,0 +1,45 @@
+.bubbleMe {
+  background-color: var(--purple-700);
+}
+.bubbleInterlocutor {
+  background-color: var(--gr-600);
+}
+
+.bubbleMeStart {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.bubbleMeMiddle {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.bubbleMeEnd {
+  border-top-right-radius: 0.25rem;
+}
+
+.bubbleInterlocutorStart {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.bubbleInterlocutorMiddle {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.bubbleInterlocutorEnd {
+  border-top-left-radius: 0.25rem;
+}
+
+.containerTail {
+  position: relative;
+  height: fit-content;
+}
+
+.containerTailLeft {
+  padding-left: 0.625rem;
+}
+
+.containerTailRight {
+  padding-right: 0.625rem;
+}

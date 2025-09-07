@@ -1,0 +1,7 @@
+.icon {
+  fill: var(--gr-400);
+}
+
+.iconContrast {
+  fill: var(--purple-300);
+}
