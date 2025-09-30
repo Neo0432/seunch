@@ -7,14 +7,19 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "svg:transform": "node ./node_modules/@svgr/cli/bin/svgr --ignore-existing  src/shared/assets/icons"
+    "svg:transform": "node ./node_modules/@svgr/cli/bin/svgr --ignore-existing  src/shared/assets/icons",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.10",
     "next": "15.5.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sass": "^1.93.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@eslint/eslintrc": "^3",
     "@svgr/cli": "^8.1.0",
     "@types/node": "^20",
@@ -23,6 +28,7 @@
     "clsx": "^2.1.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
+    "husky": "^9.1.7",
     "typescript": "^5"
   }
 }

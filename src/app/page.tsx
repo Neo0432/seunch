@@ -40,6 +40,7 @@ export default function Home() {
           <CategoryBlock count={132}>Inbox</CategoryBlock>
           <SwitchCategories
             className={styles.switch}
+            value="2"
             categories={[
               { title: "Inbox", count: 132, id: "1" },
               { title: "Unread", id: "2" },

@@ -1,21 +1,23 @@
 import clsx from "clsx";
 import { ICategoryBlockProps } from "../../model/types";
 import style from "./style.module.css";
+import { ButtonBase } from "@shared/ui/buttons";
 
 export default function CategoryBlock({
   count,
   className,
   selected,
-  onClick,
   children,
+
+  ...buttonProps
 }: ICategoryBlockProps) {
   return (
-    <div
+    <ButtonBase
       className={clsx(style.category, selected && style.selected, className)}
-      onClick={onClick}
+      {...buttonProps}
     >
       <span className={style.title}>{children}</span>
       <span className={style.count}>{count}</span>
-    </div>
+    </ButtonBase>
   );
 }

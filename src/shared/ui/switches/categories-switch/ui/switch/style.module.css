@@ -8,6 +8,7 @@
   border-radius: 1rem;
 
   background-color: var(--gr-600);
+  width: 100%;
   height: fit-content;
 }
 

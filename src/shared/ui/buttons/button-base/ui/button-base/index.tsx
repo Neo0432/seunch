@@ -1,6 +1,7 @@
 import { forwardRef, PropsWithChildren } from "react";
 import { clsx } from "clsx";
 import { IButtonProps } from "@shared/ui/buttons/types";
+import style from "./style.module.scss";
 
 export const ButtonBase = forwardRef<
   HTMLButtonElement,
@@ -13,7 +14,7 @@ export const ButtonBase = forwardRef<
       onClick={onClick}
       disabled={disabled}
       form={form}
-      className={clsx("flex cursor-pointer", className)}
+      className={clsx(style.button, className)}
     >
       {children}
     </button>

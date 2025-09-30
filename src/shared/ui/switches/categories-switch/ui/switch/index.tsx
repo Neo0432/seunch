@@ -4,6 +4,8 @@ import clsx from "clsx";
 import styles from "./style.module.css";
 
 export default function Switch({
+  value,
+  onChange,
   categories,
   className,
 }: ICategoriesSwitchProps) {
@@ -11,9 +13,10 @@ export default function Switch({
     <div className={clsx(styles.switch, className)}>
       {categories?.map((category) => (
         <CategoryBlock
-          count={category.count}
           key={category.id}
-          selected={category.id === "1"}
+          selected={category.id === value}
+          onClick={() => onChange?.(category.id)}
+          {...category}
           className={styles.categories}
         >
           {category.title}

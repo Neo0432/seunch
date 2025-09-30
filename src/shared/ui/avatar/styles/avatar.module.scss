@@ -1,0 +1,57 @@
+.avatar {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--background-secondary);
+
+  &--XSmall {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--small {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--medium {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--large {
+    width: 54px;
+    height: 54px;
+  }
+
+  &--XLarge {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.avatar-fallback {
+  color: var(--text-contrast);
+
+  &--XSmall {
+    @include mixins.captions-font-caption2-medium;
+  }
+
+  &--small {
+    @include mixins.captions-font-caption2-medium;
+  }
+
+  &--medium {
+    @include mixins.body-font-paragraph1-medium;
+  }
+
+  &--large {
+    @include mixins.headings-font-heading5;
+  }
+
+  &--XLarge {
+    @include mixins.headings-font-heading4;
+  }
+}
