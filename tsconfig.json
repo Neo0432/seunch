@@ -22,6 +22,7 @@
     "paths": {
       "@app/*": ["app/*"],
       "@entities/*": ["entities/*"],
+      "@entrypoint/*": ["entrypoint/*"],
       "@pages/*": ["pages/*"],
       "@widgets/*": ["widgets/*"],
       "@features/*": ["features/*"],

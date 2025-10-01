@@ -7,6 +7,7 @@ import { SwitchCategories } from "@shared/ui/switches";
 import { FilledInput } from "@shared/ui/inputs";
 import { useState } from "react";
 import { MessageWithTail } from "@shared/ui/messages";
+import { ChatInFeed } from "@widgets/chat";
 
 export default function Home() {
   const [value, setValue] = useState<string | null>(null);
@@ -45,6 +46,13 @@ export default function Home() {
               { title: "Inbox", count: 132, id: "1" },
               { title: "Unread", id: "2" },
             ]}
+          />
+
+          <ChatInFeed
+            username="Developer"
+            message="Message text from user which text something for u fpwemfpw"
+            lastMessageTime={new Date().getSeconds().toString()}
+            messageStatus="checked"
           />
 
           <FilledInput

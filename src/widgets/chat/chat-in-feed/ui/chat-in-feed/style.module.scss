@@ -1,0 +1,19 @@
+.chat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 25.25rem;
+  border-radius: 0.75rem;
+  background-color: #181818;
+
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  // width: 100%;
+  flex: 1;
+}

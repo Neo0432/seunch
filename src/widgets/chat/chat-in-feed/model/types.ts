@@ -1,4 +1,4 @@
-import { IMessageStatus } from "@shared/types/message";
+import { IMessageStatus, ISender } from "@shared/types/message";
 import { ReactNode } from "react";
 
 export interface IChatInFeedHeaderProps {
@@ -10,4 +10,12 @@ export interface IChatInFeedHeaderProps {
 export interface IChatInFeedMessageProps {
   message: string;
   rightContent?: ReactNode;
+}
+
+export interface IChatInFeedProps
+  extends IChatInFeedHeaderProps,
+    IChatInFeedMessageProps {
+  isChatPinned?: boolean;
+  lastMessageSender?: ISender;
+  unreadMessagesCount?: number;
 }

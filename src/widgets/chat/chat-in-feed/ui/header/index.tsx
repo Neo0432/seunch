@@ -1,5 +1,6 @@
 import { getMessageStatusIcon } from "@shared/libs/get-message-status-icon";
 import { IChatInFeedHeaderProps } from "../../model/types";
+import style from "./style.module.scss";
 
 export function ChatInFeedHeader({
   lastMessageTime,
@@ -7,10 +8,12 @@ export function ChatInFeedHeader({
   messageStatus,
 }: IChatInFeedHeaderProps) {
   return (
-    <div>
+    <div className={style.header}>
       <p>{username}</p>
-      {messageStatus && getMessageStatusIcon(messageStatus)()}
-      <p>{lastMessageTime}</p>
+      <div className={style.statusesContainer}>
+        {messageStatus && getMessageStatusIcon(messageStatus)()}
+        <p>{lastMessageTime}</p>
+      </div>
     </div>
   );
 }

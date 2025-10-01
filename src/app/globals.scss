@@ -1,3 +1,5 @@
+@forward "@entrypoint/styles/colors.scss";
+
 :root {
   --gr-800: #090909;
   --gr-700: #121212;
@@ -17,6 +19,21 @@
 ::after,
 ::before {
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-outfit);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
